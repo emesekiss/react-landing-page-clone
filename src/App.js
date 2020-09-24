@@ -5,39 +5,25 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 
 import logo from './images/logo.png';
-import image1 from './images/image1.png';
-import image2 from './images/image2.png';
-import image3 from './images/image3.png';
-import image4 from './images/image4.png';
-import image5 from './images/image5.png';
-import image6 from './images/image6.png';
-import image7 from './images/image7.png';
-import image8 from './images/image8.png';
-import image9 from './images/image9.png';
-import image10 from './images/image10.png';
-import image11 from './images/image11.png';
-import image12 from './images/image12.png';
-import image13 from './images/image13.png';
-import image14 from './images/image14.png';
-import image15 from './images/image15.png';
+import firstsection1 from './images/firstsection1.png';
 
 const centeredContainerStyles = css`
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px padding-right 15px;
+  padding: 0 15px;
 `;
 
 const headerStyles = css`
   ${centeredContainerStyles};
   background-color: #234598;
   background-size: cover;
-  padding: 45px 0 40px;
+  padding: 40px 49px 30px;
   width: 100%;
 
   color: #fff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.05px;
 `;
 
@@ -46,26 +32,28 @@ const headerInnerStyles = css`
   display: flex;
   justify-content: space-between;
   nav a {
-    margin-right: 20px;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 40px 22px 30px;
+    margin-left: 40px;
+    margin-right: -15px;
+    margin-top: 10px;
   }
   a:last-child {
     background-color: #3c5aa4;
     border-radius: 13px;
-    background-color: #3c5aa4;
     padding: 15px 30px;
   }
 `;
 const firstSectionStyle = css`
   ${centeredContainerStyles}
   background-color: #234598;
+  padding: 20px 55px 160px;
+
   h1 {
     color: white;
-    margin: 0;
     font-size: 86px;
-    margin-top: -130px;
+    margin-top: -60px;
   }
   p {
     color: #f0b1b5;
@@ -73,10 +61,19 @@ const firstSectionStyle = css`
     font-family: 'MafraBold';
     line-height: 34px;
     font-weight: bold;
+    margin-top: -10px;
+    width: 95%;
   }
   > div {
     display: flex;
     align-items: center;
+    margin-top: -5px;
+  }
+  .firstsectionicon {
+    height: 86px;
+    position: absolute;
+    left: 0;
+    top: 110%;
   }
 `;
 
@@ -96,11 +93,29 @@ const buttonStyle = css`
   border-radius: 13px;
   border: none;
 `;
-// const navStyles = css`
-//   display: flex;
-//   justify-content: space-between;
-//   cursor: pointer;
-// `;
+const secondSectionStyle = css`
+  ${centeredContainerStyles}
+  background-color: #b7d9d6;
+  padding: 150px 0px 80px 0px;
+
+  h2 {
+    max-width: 80%;
+    margin: 0px auto 0px;
+    color: #143b73;
+    font-size: 33px;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+    text-align: center;
+    font-weight: 550;
+  }
+  .secondsectionicon {
+    width: 86px;
+    height: 103px;
+    right: -10px;
+    top: 970px;
+    position: absolute;
+  }
+`;
 
 function App() {
   return (
@@ -133,18 +148,28 @@ function App() {
               </p>
               <button css={buttonStyle}>Learn More</button>
             </div>
-            <img src={image1} alt="" />
+            <img src={firstsection1} alt="" />
+            <img
+              className="firstsectionicon"
+              src="https://prodigitas.com/wp-content/uploads/2020/03/noun_rectangle_2731804@2x.png"
+              alt=""
+            />
           </div>
         </section>
 
-        <section>
+        <section css={secondSectionStyle}>
           <div>
             <h2>
               For years, we have worked extensively with businesses who are let
-              down by low quality competitors and unreliable freelancers. We
-              understand the pain points.
+              down by low quality competitors and unreliable freelancers.
+              <br /> We understand the pain points.
             </h2>
-            <img src={image2} alt="" />
+            <img
+              className="secondsectionicon"
+              src="https://prodigitas.com/wp-content/uploads/2020/03/noun_rectangle_sec.png"
+              alt=""
+            />
+            {/* <img src={image2} alt="" />
             <h2>Quality</h2>
             <p>
               Quality first. All projects are backed by our fanatic support &
@@ -161,11 +186,11 @@ function App() {
             <p>
               Single point of contact, in sync with the tools you use. We speak
               your language.
-            </p>
+            </p> */}
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div>
             <h2>Hello, we are Prodigitas.</h2>
             <p>
@@ -179,8 +204,8 @@ function App() {
             <p>
               We identify and nurture a truly diverse team of designers,
               developers and marketers under one roof .
-            </p>
-            <img src={image6} alt="" />
+            </p> */}
+        {/* <img src={image6} alt="" />
             <h3>In- sync with you</h3>
             <p>
               We work the way you do by adapting to your workflows and rhythm.
@@ -198,10 +223,10 @@ function App() {
               We do not measure mere output but rate ourselves by the impact we
               create by our work.
             </p>
-          </div>
-        </section>
+          </div> */}
+        {/* </section> */}
 
-        <section>
+        {/* <section>
           <div>
             <h2>Our Capabilities</h2>
             <img src={image9} alt="" />
@@ -251,8 +276,8 @@ function App() {
             <h2>Partnering with the best</h2>
             <img src={image12} alt="" />
           </div>
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
           <div>
             <h2>You are in good Company</h2>
             <img src={image13} alt="" />
@@ -273,8 +298,8 @@ function App() {
             </h3>
             <p>GVS Chaitanya ( Head of Growth, Appknox)</p>
           </div>
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
           <div>
             <h2>Getting started is easy</h2>
             <h6>STEP 1</h6>
@@ -299,7 +324,7 @@ function App() {
             </p>
             <button>Get Started</button>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* <footer> */}

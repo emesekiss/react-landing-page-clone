@@ -14,12 +14,12 @@ ReactDOM.render(
           box-sizing: border-box;
         }
         body {
-          margin: 0 55px 0;
+          margin: 0;
+
           font-family: 'Kumbh Sans', sans-serif, ---apple-system,
             BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
             'Open Sans', 'Helvetica Neue', sans-serif;
           line-height: 1.2;
-          background-color: #234598;
         }
       `}
     />

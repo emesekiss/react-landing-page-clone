@@ -146,7 +146,7 @@ function App() {
               </p>
               <button css={buttonStyle}>Learn More</button>
             </div>
-            <img src={firstsection1} alt="" />
+            <img src={firstsection1} alt="A woman and a man talking in an office" />
             <img
               css={firstSectionIcon}
               src="https://prodigitas.com/wp-content/uploads/2020/03/noun_rectangle_2731804@2x.png"
